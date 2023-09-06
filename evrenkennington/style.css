@@ -1,0 +1,52 @@
+body {
+    background-color: lavenderblush;
+}
+#name {
+    text-align: center;
+    font-size: 80px;
+}
+#pronouns {
+    text-align: center;
+    font-size: 35px;
+}
+.title {
+    line-height: 40%;
+}
+ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      background-color: white;
+      overflow: hidden;
+      border-style: solid;
+      border-color: #ffccdd;
+      border-width: 10px;
+    }
+li {
+    float: left;
+    font-size: 40px;
+}
+li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 18.07px;
+    color: black;
+}
+
+
+#home:hover {
+    background-color: #ff99bb;
+}
+#about:hover {
+    background-color: #f7d9a1;
+}
+#portfolio:hover {
+    background-color: #b3ffc7;
+}
+#contact:hover {
+    background-color: #b3dbff;
+}
+.active {
+    background-color: #ffccdd;
+}
