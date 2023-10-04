@@ -14,24 +14,23 @@ header {
     
     background-size: cover;
     background-image: url(jellyfish-four.jpg);
-    filter: opacity(80%);
     background-attachment: fixed;
     background-position: center bottom;
     
-
+    filter: brightness(80%) saturate(80%);
 }
 
 body {
     margin: 0px;
     font-family: Arial, sans-serif;
-    background-color: #000D41;
-    color: #B2B6C6;
+    background-color: #0e1a42;
+    color: white;
 }
 
 a, li {
     line-height: 1.5em;
     font-size: 1.1em;
-    color: #AEB2BF;
+    color: white;
 }
 
 section {
@@ -47,16 +46,16 @@ section {
 }
 
 
-
+#class-exercises {
+    background-color: #232357;
+}
 
 #tutorials {
-    color: #AEB2BF;
-    text-decoration: white;
     background-image: url(jellyfish-one.jpg);
 }
 
 #inspiration {
     background-image: url(jellyfish-three.jpg);
-    filter: opacity(80%);
+    filter: brightness(90%) saturate(80%);
 }
 
