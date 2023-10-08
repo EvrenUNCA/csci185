@@ -31,10 +31,11 @@ a, li {
     line-height: 1.5em;
     font-size: 1.1em;
     color: white;
+    
 }
 
 section {
-    font-size: large;
+    font-size: 30px;
     padding: 30px;
 
     height:100vh;
