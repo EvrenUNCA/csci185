@@ -31,19 +31,31 @@ a, li {
     line-height: 1.5em;
     font-size: 1.1em;
     color: white;
-    
+    padding: 5px;
+}
+
+a:hover, a:focus {
+    text-decoration: none;
 }
 
 section {
     font-size: 30px;
     padding: 30px;
 
-    height:100vh;
     width: 100%;
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
-   background-attachment: fixed;
+    background-attachment: fixed;
+    
+    display: grid;
+    grid-template-columns: 3fr 7fr;
+    flex-wrap: wrap;
+}
+
+section h2 {
+    display: flex;
+    align-items: center;
 }
 
 
@@ -53,10 +65,12 @@ section {
 
 #tutorials {
     background-image: url(jellyfish-one.jpg);
+    height: 100vh;
 }
 
 #inspiration {
     background-image: url(jellyfish-three.jpg);
     filter: brightness(90%) saturate(80%);
+    height: 100vh;
 }
 

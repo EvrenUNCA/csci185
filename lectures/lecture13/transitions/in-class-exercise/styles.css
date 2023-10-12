@@ -1,0 +1,73 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+
+body * {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 20vh 20vw;
+}
+
+.section-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.section-container section {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    background: #CCC;
+}
+
+
+#section1 {
+    background: #0c7474;
+    color: white;
+    transition: all 0.6s ease-out;
+}
+
+#section1:hover {
+    background: purple;
+    width: 220px;
+    height: 220px;
+}
+
+
+
+ 
+#section2 { 
+    border: solid deepskyblue 10px;
+    background: white;
+    transition: all 0.6s ease-out;
+}
+
+#section2:hover {
+    border: solid darkblue 30px;
+} 
+
+#section3 { 
+    transition: all 0.6s ease-out;
+}
+
+#section3:hover { 
+    border-radius: 100px;
+    font-size: 40px;
+}
+
+#section4 a {
+    font-size: 30px;
+    color: orange;
+    margin: 5px;
+    transition: all 0.5s ease-out;
+}
+
+#section4 a:hover {
+    color: red;
+    font-size: 35px;
+    text-decoration: none;
+}

@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    background-color: black;
+    animation: colorChange 12s linear 1s forwards;
+}
+
+@keyframes colorChange {
+    0% {
+        background-color: black;
+    }
+    30% {
+        background-color: darkred;
+    }
+    35% {
+        background-color: orangered;
+    }
+    45% {
+        background-color: orange;
+    }
+    70% {
+        background-color: darkblue;
+    }
+    80% {
+        background-color: blue;
+    }
+    100% {
+        background-color: skyblue;
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+}
+
+#mountains {
+    position: absolute;
+    width: 100vw;
+    bottom: 0vh;
+    left: 0;
+    z-index: 100;
+}
+
+#sun {
+    position: absolute;
+    color: #FF3300;
+    bottom: -10vh;
+    left: calc(50vw - 50px); 
+    font-size: 200px;
+
+    animation-timing-function: linear;
+    animation-fill-mode: forwards; 
+    animation-name: sunrise;
+    animation-delay: 1s;
+    animation-duration: 12s; 
+}
+
+@keyframes sunrise {
+    0% { 
+        transform: translate(0, 0);
+        color: #FF3300;
+        font-size: 200px;
+    }
+    100% { 
+        transform: translate(0, -70vh); 
+        color: yellow;
+        font-size: 100px;
+    }
+}
+
+#cloud1 {
+    position: absolute;
+    color: #EEE;
+    top: 0px;
+    left: 0px;
+    font-size: 100px;
+    margin-top: 30px;
+    
+    /* Start by positioning the cloud to the left by 30vw */
+    transform: translate(-30vw, 0);
+
+
+    animation-timing-function: linear;
+    animation-iteration-count: infinite; 
+    animation-direction: alternate;
+    animation-name: moveCloudHorizontally;
+    animation-delay: 1s;
+    animation-duration: 18s;
+}
+
+@keyframes moveCloudHorizontally {
+    0% { 
+        transform: translate(-30vw, 0);
+    }
+    100% { 
+        transform: translate(110vw, 0); 
+    }
+} 
